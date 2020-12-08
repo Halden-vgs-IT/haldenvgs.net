@@ -1,0 +1,82 @@
+:root {
+    --bg: #2C2F33;
+    --bg2: #23272A;
+    --txtColor: white;
+}
+html, body {
+    margin: 0;
+    background-color: var(--bg);
+    color: var(--txtColor);
+    font-family: Consolas, "Courier New", monospace;
+}
+/* Nav */
+nav {
+    background-color: var(--bg2);
+}
+nav ul {
+    right: 100px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    list-style-type: none;
+    vertical-align: center;
+}
+nav ul .navItem {
+    padding: 10px;
+}
+nav ul .navItem a {
+    text-decoration: none;
+    color: var(--txtColor);
+}
+
+/* Header */
+header img {
+    display: flex;
+    height: 80vh;
+    margin: 5vh auto;
+}
+
+/* Main */
+main {
+    margin: 1vw;
+}
+main#ringve {
+    margin: 1vw;
+}
+#ringve img {
+    width: 99%;
+    margin-top: 3vh;
+}
+
+/* Projects */
+#projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: var(--bg2);
+    width: 90%;
+    margin: 1rem auto;
+}
+.projectElement {
+    position: relative;
+    width: 100%; height: 100%;
+    list-style-type: none;
+}
+.projectElement a {
+    display: flex;
+    padding: 2rem 0;
+    justify-content: center; align-items: center;
+    text-decoration: none;
+    color: var(--txtColor);
+}
+.projectElement a:hover, .projectElement a:hover::after {
+    content: "";
+    font-weight: 800;
+    animation: cmdLine 1.5s linear infinite;
+}
+
+@keyframes cmdLine {
+    50% {content: "_"}
+    100% {content: ""}
+}

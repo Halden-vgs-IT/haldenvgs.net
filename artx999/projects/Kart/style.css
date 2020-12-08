@@ -1,0 +1,27 @@
+html, body {
+    margin: 0;
+}
+main {
+    display: flex;
+    height: 100vh;
+}
+#map {
+    height: 80vh;
+    width: 80%;
+    margin: auto;
+}
+#codeButton {
+    height: 40px;
+    width: 100px;
+    position: absolute;
+    z-index: 5000000;
+    margin: 10vh 20px;
+    right: 0;
+}
+#code {
+    display: none;
+    position: absolute;
+    height: 80vh;
+    width: 80%;
+    margin: auto;
+}
