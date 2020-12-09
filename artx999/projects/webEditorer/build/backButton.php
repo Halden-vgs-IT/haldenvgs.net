@@ -1,1 +1,0 @@
-<button id="backButton" onclick="history.back()"><i class="uil uil-previous"></i>Back</button>
