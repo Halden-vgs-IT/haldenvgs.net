@@ -1,0 +1,25 @@
+{
+    "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
+    "version": "1.0.0",
+    "generatedTime": 1608235248878,
+    "data": [
+        {
+            "type": "file",
+            "name": "README.md",
+            "size": 49,
+            "hash": "e40823cac2cde116950c7c8e311ee8489caf4cb3998288186232499b6f8d80af"
+        },
+        {
+            "type": "file",
+            "name": "backend.drawio",
+            "size": 6535,
+            "hash": "193f965abbe0cb9d14d6892ac1cbf71c532e863120565b05813c544103dd4910"
+        },
+        {
+            "type": "file",
+            "name": "yeet.md",
+            "size": 7,
+            "hash": "ae867e25f9975698491cb67dd3e0a1e693af1cf3a544c94d40e6397ada5da66e"
+        }
+    ]
+}

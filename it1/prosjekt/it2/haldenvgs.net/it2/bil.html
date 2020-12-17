@@ -1,0 +1,139 @@
+﻿<!doctype html>
+<html>
+<head>
+<title>mal</title>
+<meta charset="utf-8" />
+<style type = "text/css">
+
+#bil
+{
+  position: absolute;
+  height: 20px;
+  top: 40px;
+}
+
+#c
+{
+  border: thin solid black;
+  height: 200px;
+}
+</style>
+</head>
+<body> 
+   <img id="bil" src="car.png" alt="En bil"/>
+   <canvas id="c" width="800"></canvas>
+   <p>
+   <input type="number" id="fart" value="1"/>
+   <span id="lengde">0</span>
+   <input type="button" id="start" value="start"/>
+   <input type="button" id="brems" value="brems"/>
+   </p>
+   <script src="../turtle.js"></script>
+   <script>
+
+     var bil = document.getElementById("bil"); // En javascript-variabel for bilen
+     var x = 0;    
+     var v;      // En variabel som inneholder bilens y-posisjon
+     var lengde;
+     var start = 0;
+     const pxprm = 2;
+     var t;
+     
+     bil.run = function()                    // En funksjon som skal repeteres
+     {
+       x = x + 1;                            // Øk posisjonsvariablen
+       bil.style.left = (x*pxprm) + "px";            // Flytt bilen til ny posisjon
+       if(start)
+         if(x > start + lengde)
+           clearInterval(v);
+       t.forward(pxprm);    
+     };
+
+     var fartF = document.getElementById("fart");  
+     var startF = document.getElementById("start");  
+     var bremsF = document.getElementById("brems");  
+     var lengdeF = document.getElementById("lengde");  
+     var c = document.getElementById("c");  
+
+     startF.onclick = function()
+     {
+       clearInterval(v);
+       t.strokeStyle = "rgb(256,0,0)";
+       t.back(x*pxprm);
+       start = 0;
+       x = 0;
+       fartkm = fartF.value * 1.0;
+       fartms = fartF.value * 1000 / (60 * 60);
+       t.strokeStyle = "rgb(128,0,256)";
+       v = setInterval(bil.run,1000/fartms);   // Kjør med fart m/s
+       lengde = ((fartkm/10) * (fartkm/10)) / 2;
+       lengdeF.innerHTML = lengde;
+     }
+
+     bremsF.onclick = function()
+     {
+       fartkm = fartF.value * 1.0;
+       lengde = ((fartkm/10) * (fartkm/10)) / 2;
+       start  = x;
+       lengdeF.innerHTML = lengde;
+       t.strokeStyle = "rgb(0,256,128)";
+     }
+     
+     t = new Turtle(c);
+     t.right(90);
+     t.back(c.width/2);
+     k = Math.floor((c.width)/(pxprm*10));
+     for(i=0;i<k;i++)
+     {
+       t.forward(pxprm*10);
+       t.left(90);
+       t.forward(pxprm);
+       t.back(pxprm);
+       t.right(90);
+     }
+     t.back(10*pxprm*k);
+     
+     </script>
+<pre>
+1. Skriv om funksjonen "flytt" slik at bilen flytter seg horisontalt istedenfor vertikalt.
+2. Endre koden slik at bilen kjører dobbelt så fort.
+
+3. Lag et canvas som dekker skjermen horisontalt. Plasser bilen slik at den kjører over canvaset.
+
+4. Bestem deg for en målestokk, for eksempel 5 px pr meter.
+Tegn en målestav på canvas. Du kan bruke skilpaddegrafikk, 
+eller hvis du vil, grafikkomandoene i boka (s.56->). 
+Målestaven bør vise en lang linje, en vertikal strek hver 10m
+og hver meter som en litt kortere strek.
+Bilen skal nå kjøre langs målestaven.
+
+5. Lag en knapp, (input type button). Plasser dem nedenfor canvas.
+Endre koden slik at bilen begynner å kjøre først når knappen trykkes.
+
+6. Lag et input-element og et span-element. Plasser dem nedenfor canvas.
+Bruk input-elementet til å hente inn bilens fart (i km/t). 
+Regn om farten til meter/sekund. (Gang med 1000, del på 3600)
+
+Bruk dette til å endre farten bilen beveger seg i. 
+
+(La endringen fra oppgave 2 stå som en kommentar)
+
+Dette bør stemme overens med målestaven og målestokken du har valt.
+
+Hvis du for eksempel setter farten til 36 km/t, så tilsvarer dette 10 m/s. 
+Hvis målestokken er 10 px pr meter, så skal bilen flyttes 100 pixler i sekundet. 
+
+7. Beregn bremselengden. Skriv bremselengden i span-elementet.
+
+(Farten målt i km/t / 10) ganget med seg selv, delt på 2 blir bremselengden i meter.
+
+8. Utvid funksjonen "flytt", slik at den stanser når bilen 
+
+8. Lag en ny knapp, merk den "brems". Når du trykker på knappen
+
+</pre>
+</body>
+</html>
+
+
+

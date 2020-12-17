@@ -1,0 +1,33 @@
+﻿<!doctype html>
+<html>
+<head>
+<title>mal</title>
+<meta charset="utf-8" />
+<style type = "text/css">
+
+#bil
+{
+  position: relative;
+  height: 20px;
+}
+</style>
+</head>
+<body> 
+   <img id="bil" src="car.png" alt="En bil"/>
+   <script>
+
+     var bil = document.getElementById("bil"); // En javascript-variabel for bilen
+     var y = 0;                                // En variabel som inneholder bilens y-posisjon
+     var v;                                    // En variabel som viser til animasjonwn
+     
+     bil.flytt = function()                    // En funksjon som skal repeteres
+     {
+       y = y + 1;                              // Øk posisjonsvariablen
+       bil.style.top = y + "px";               // Flytt bilen til ny posisjon
+     };
+     v = setInterval(bil.flytt,100);           // Kjør funksjonen hvert 100 ms
+
+   </script>
+
+</body>
+</html>

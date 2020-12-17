@@ -1,0 +1,167 @@
+:root {
+    --main-bg-color: #333333;
+    --primary-color: #137B34;
+    --secondary-color: #E83B3B;
+}
+
+body {
+    background-size: cover;
+    background-color: var(--main-bg-color);
+    font-family: Lucida, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/*
+button {
+    position: relative;
+    display: inline-block;
+    background-color: #137B34;
+    color: white;
+    width: 20vw;
+    height: 10vw;
+    font-size: 2vw;
+    font-weight: bold;
+    font-family: Lucida, sans-serif;
+    margin-left: 10vw;
+    margin-top: 1vw;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+ */
+td,th,table {
+    border: 1px solid var(--primary-color);
+    border-collapse: collapse;
+    color: var(--primary-color);
+}
+table {
+    float: left;
+}
+.alpha {
+    color: var(--primary-color);
+    font-size: 10vw;
+}
+.databaseInfo {
+    position: fixed;
+    margin-left: 50%;
+    float: left;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    transform: translate(-50%);
+    text-align: center;
+}
+.table {
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    background-color: var(--main-bg-color);
+    border: none
+}
+.tableList {
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    height: 50vh;
+    background-color: var(--main-bg-color);
+    float: left;
+    border: none;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+
+}
+.left {
+    margin: 0;
+    padding: 0;
+    min-width: 50%;
+    height: 100vh;
+    float: left;
+    background-color: var(--main-bg-color);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right {
+    margin: 0;
+    padding: 0;
+    min-width: 50%;
+    height: 100vh;
+    float: right;
+    background-color: var(--primary-color);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.alpha:hover {
+    cursor: pointer;
+    color: var(--secondary-color);
+    transition: 0.5s;
+}
+.left:hover, .right:hover {
+    cursor: pointer;
+}
+#avg {
+    color: var(--primary-color);
+}
+#centerBox {
+    position: relative;
+    width: 75vw;
+    height: 15vw;
+    margin: 15vw;
+    padding: 0;
+}
+#chartContainer {
+    height: 300px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+#errorHeading {
+    color: var(--secondary-color);
+    font-size: 10em;
+}
+#errorDescription {
+    color: var(--primary-color);
+    font-size: 4em;
+}
+#info {
+    position: fixed;
+    color: white;
+    font-size: 2vw;
+    text-align: center;
+    margin: 10% 0 0 50%;
+    transform: translate(-50%);
+}
+#logInButton {
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+    width: 20vw;
+    height: 4vw;
+    font-size: 2.67vw;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+#logInButton:hover {
+    background-color: var(--primary-color);
+    transition: 0.5s;
+}
+#password {
+    margin: 50% 0 20px 0;
+    width: 40vw;
+    height: 4vw;
+    border: 0.5px black solid;
+    text-align: center;
+    font-size: 2.67vw;
+    transform: translate(0, -50%);
+    z-index: 2;
+}
+#time {
+    color: var(--primary-color);
+}

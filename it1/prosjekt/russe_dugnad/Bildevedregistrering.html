@@ -1,0 +1,36 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Russebudsjett - Legg til profilbilde</title>
+<style>
+#picupload {
+  margin: auto auto;
+}
+</style>
+<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="Russebudsjett.css">
+</head>
+<body>
+  <div id='picupload'>
+    <h2>Legg til profilbilde</h2>
+  <form style='display: inline;' action='Actionfiler/Profil/Lastoppbilde.php' enctype='multipart/form-data' method='post'>
+              <label class='button'><input type='file' name='image' id='fileToUpload' onchange="checkfile()">Velg fil</label>
+              <p style='display: inline; font-size: 0.9rem' id='filvalgt'>Ingen fil valgt</p>&emsp;&emsp;
+                <input type='hidden' name='videresend2' value='../../Hjem.php'>
+              <input class='button' type='submit' value='Last opp' ><br><br>
+              <a class='button' href='Hjem.php' target="_self">Legg til senere</a>
+  </form>
+</div>
+  <script>
+  function checkfile() {
+    var file = document.getElementById("fileToUpload").value;
+    var filename = file.slice(12);
+    var text = document.getElementById("filvalgt")
+
+  text.innerHTML = filename;
+  }
+  </script>
+</body>

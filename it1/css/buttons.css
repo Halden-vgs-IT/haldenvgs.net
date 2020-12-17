@@ -1,0 +1,250 @@
+/* -
+-*-~*~-*-*-~*~-*-*-~*~*-*-~*~-*-*-~*~-*-*-~*~*-*-~*~-* |
+　　　　　●▬▬▬▬▬▬▬▬▬▬▬▬▬▬๑ 　❤️๑▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬●
+　. 　　　　　　　　　　　　　　　　　　o 　　　　　+
+　　()　　　　　　+　　 Made with ❤ by ~
+　　　　　o 　　　　　Areal Alien ❥ 雷克斯　　　　.
+　　.　　　　　　　　　　　.
+　　　　　　　　　　　　 ●▬▬▬๑ 💙 ๑▬▬▬●　　　　　　()
+　　+　　　　　　. 　　　　　　　　　　　　　　o
+　o　　　　　　　　　　　 ▄▀▄　　　▄▀▄　　　　　　　+
+　　　　　　+　　　　　 ▄█░░▀▀▀▀▀░░█▄　　.
+　　　.　　　　　 ▄▄ 　█░░░░░░░░░░░█　▄▄
+　　　　　　.　 █▄▄█　█░░▀░░┬░░▀░░█　█▄▄█　　　o
+　　　　　●▬▬▬▬▬▬▬▬▬▬▬▬▬▬๑ 　❤️๑▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬●
+-*-~*~-*-*-~*~-*-*-~*~*-*-~*~-*-*-~*~-*-*-~*~*-*-~*~-* |
+- */
+/* Button 1 */
+.btn-space {
+    margin: 1.5em 0 0 0;
+}
+.btn-wrapper {
+    padding: 1em 0 0 0;
+}
+.button, .btn-secondary {
+    margin: 0;
+    position: relative;
+    cursor: pointer;
+    padding: .8em 1.4em;
+    letter-spacing: .1em;
+    text-align: center;
+    color: var(--bc);
+    font-size: var(--button-small);
+    background: var(--gradient);
+    background-size: 1100%;
+    border-radius: 50px;
+    border: none;
+    transform: scaleX(1);
+    transition: transform .3s cubic-bezier(.175,.885,.32,1.275), background-position 3s cubic-bezier(.455,.03,.515,.955), -webkit-transform .3s cubic-bezier(.175,.885,.32,1.275), opacity .3s cubic-bezier(.175,.885,.32,1.275);
+}
+.button {
+    transition: transform .3s cubic-bezier(.175,.885,.32,1.275), bottom .3s cubic-bezier(.175,.885,.32,1.275), background-position 3s cubic-bezier(.455,.03,.515,.955), -webkit-transform .3s cubic-bezier(.175,.885,.32,1.275);
+}
+.button, .button .btn-secondary {
+    background-position: 0 50%;
+    bottom: 0;
+}
+.button .btn-secondary {
+    left: 0;
+    width: 100%;
+    position: absolute;
+    filter: blur(16px);
+    opacity: .9;
+    z-index: -1;
+    transform: scale3d(.9, .9, 1);
+    transition: transform .3s cubic-bezier(.175,.885,.32,1.275), filter .3s cubic-bezier(.175,.885,.32,1.275), bottom .3s cubic-bezier(.175,.885,.32,1.275), background-position 3s cubic-bezier(.455,.03,.515,.955), -webkit-transform .3s cubic-bezier(.175,.885,.32,1.275), -webkit-filter .3s cubic-bezier(.175,.885,.32,1.275);
+}
+.button:focus, .button:hover {
+    transform: scale3d(1.1, 1.1, 1);
+    background-position: 100% 50%;
+    outline: none;
+    bottom: 2px;
+}
+.button:focus .btn-secondary, .button:hover .btn-secondary {
+    background-position: 100% 50%;
+    filter: blur(25px);
+    bottom: -5px;
+}
+/* Button */
+.button2, .btn-secondary2 {
+    margin: 0;
+    position: relative;
+    cursor: pointer;
+    padding: 1.2em 2em;
+    letter-spacing: .1em;
+    text-align: center;
+    color: var(--bc);
+    font-size: var(--button-large);
+    background: var(--gradient2);
+    background-size: 1100%;
+    border-radius: 50px;
+    border: none;
+    transform: scaleX(1);
+    transition: transform .3s cubic-bezier(.175,.885,.32,1.275), background-position 3s cubic-bezier(.455,.03,.515,.955), -webkit-transform .3s cubic-bezier(.175,.885,.32,1.275);
+}
+.button2 {
+    transition: transform .3s cubic-bezier(.175,.885,.32,1.275), bottom .3s cubic-bezier(.175,.885,.32,1.275), background-position 3s cubic-bezier(.455,.03,.515,.955), -webkit-transform .3s cubic-bezier(.175,.885,.32,1.275);
+}
+.button2, .button2 .btn-secondary2 {
+    background-position: 0 50%;
+    bottom: 0;
+}
+.button2 .btn-secondary2 {
+    left: 0;
+    width: 100%;
+    position: absolute;
+    filter: blur(16px);
+    opacity: .9;
+    z-index: -1;
+    transform: scale3d(.9, .9, 1);
+    transition: transform .3s cubic-bezier(.175,.885,.32,1.275), filter .3s cubic-bezier(.175,.885,.32,1.275), bottom .3s cubic-bezier(.175,.885,.32,1.275), background-position 3s cubic-bezier(.455,.03,.515,.955), -webkit-transform .3s cubic-bezier(.175,.885,.32,1.275), -webkit-filter .3s cubic-bezier(.175,.885,.32,1.275);
+}
+.button2:focus, .button2:hover {
+    transform: scale3d(1.1, 1.1, 1);
+    background-position: 100% 50%;
+    outline: none;
+    bottom: 2px;
+}
+.button2:focus .btn-secondary2, .button2:hover .btn-secondary2 {
+    background-position: 100% 50%;
+    filter: blur(25px);
+    bottom: -5px;
+}
+/* Button 3 */
+.button3, .btn-secondary3 {
+    margin: 0;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    padding: 1.2em 2em;
+    letter-spacing: .1em;
+    text-align: center;
+    color: var(--white);
+    font-size: var(--button-small);
+    background: var(--gradient2);
+    background-size: 1100%;
+    border-radius: 50px;
+    border: none;
+    transform: scaleX(1);
+    transition: transform .3s cubic-bezier(.175,.885,.32,1.275), filter .3s cubic-bezier(.175,.885,.32,1.275), bottom .3s cubic-bezier(.175,.885,.32,1.275), background-position 3s cubic-bezier(.455,.03,.515,.955), -webkit-transform .3s cubic-bezier(.175,.885,.32,1.275), -webkit-filter .3s cubic-bezier(.175,.885,.32,1.275);
+}
+.button3 {
+    transition: transform .3s cubic-bezier(.175,.885,.32,1.275), bottom .3s cubic-bezier(.175,.885,.32,1.275), background-position 3s cubic-bezier(.455,.03,.515,.955), -webkit-transform .3s cubic-bezier(.175,.885,.32,1.275);
+}
+.button3, .button3 .btn-secondary3 {
+    background-position: 0 50%;
+    bottom: 0;
+}
+.button3 .btn-secondary3 {
+    left: 0;
+    width: 100%;
+    position: absolute;
+    filter: blur(16px);
+    opacity: .9;
+    z-index: -1;
+    transform: scale3d(.9, .9, 1);
+    transition: transform .3s cubic-bezier(.175,.885,.32,1.275), filter .3s cubic-bezier(.175,.885,.32,1.275), bottom .3s cubic-bezier(.175,.885,.32,1.275), background-position 3s cubic-bezier(.455,.03,.515,.955), -webkit-transform .3s cubic-bezier(.175,.885,.32,1.275), -webkit-filter .3s cubic-bezier(.175,.885,.32,1.275);
+}
+.button3:focus, .button3:hover {
+    transform: scale3d(1.1, 1.1, 1);
+    background-position: 100% 50%;
+    outline: none;
+    bottom: 2px;
+}
+.button3:focus .btn-secondary3, .button3:hover .btn-secondary3 {
+    background-position: 100% 50%;
+    filter: blur(25px);
+    bottom: -5px;
+}
+/* Button 4 */
+.btn-wrapper4 {
+    padding: 0;
+}
+.button4, .btn-secondary4 {
+    margin: 0;
+    position: relative;
+    cursor: pointer;
+    padding: .8em 2em;
+    letter-spacing: .1em;
+    text-align: center;
+    color: var(--white);
+    font-size: var(--button-small);
+    background: transparent;
+    border-radius: 50px;
+    border: 2px solid var(--white);
+    transform: scaleX(1);
+    transition: -webkit-transform .3s cubic-bezier(.175,.885,.32,1.275);
+    transition: transform .3s cubic-bezier(.175,.885,.32,1.275), filter .3s cubic-bezier(.175,.885,.32,1.275), bottom .3s cubic-bezier(.175,.885,.32,1.275), background-position 3s cubic-bezier(.455,.03,.515,.955), -webkit-transform .3s cubic-bezier(.175,.885,.32,1.275), -webkit-filter .3s cubic-bezier(.175,.885,.32,1.275);
+}
+.button4 {
+    transition: transform .3s cubic-bezier(.175,.885,.32,1.275), bottom .3s cubic-bezier(.175,.885,.32,1.275), background-position 3s cubic-bezier(.455,.03,.515,.955), -webkit-transform .3s cubic-bezier(.175,.885,.32,1.275);
+}
+.button4, .button4 .btn-secondary4 {
+    background-position: 0 50%;
+    bottom: 0;
+}
+.button4 .btn-secondary4 {
+    left: 0;
+    width: 90%;
+    position: absolute;
+    filter: blur(16px);
+    opacity: .9;
+    z-index: -1;
+    transform: scale3d(.9, .9, 1);
+    transition: transform .3s cubic-bezier(.175,.885,.32,1.275), filter .3s cubic-bezier(.175,.885,.32,1.275), bottom .3s cubic-bezier(.175,.885,.32,1.275), background-position 3s cubic-bezier(.455,.03,.515,.955), -webkit-transform .3s cubic-bezier(.175,.885,.32,1.275), -webkit-filter .3s cubic-bezier(.175,.885,.32,1.275);
+}
+.button4:focus, .button4:hover {
+    transform: scale3d(1.1, 1.1, 1);
+    outline: none;
+    bottom: 2px;
+}
+.button4:focus .btn-secondary4, .button4:hover .btn-secondary4 {
+    filter: blur(25px);
+    bottom: -5px;
+}
+/* Button 3 */
+.button5, .btn-secondary5 {
+    margin: 0;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    padding: 1.2em 2em;
+    letter-spacing: .1em;
+    text-align: center;
+    color: var(--bc);
+    font-size: var(--button-large);
+    background: var(--gradient2);
+    background-size: 1100%;
+    border-radius: 50px;
+    border: none;
+    transform: scaleX(1);
+    transition: transform .3s cubic-bezier(.175,.885,.32,1.275), filter .3s cubic-bezier(.175,.885,.32,1.275), bottom .3s cubic-bezier(.175,.885,.32,1.275), background-position 3s cubic-bezier(.455,.03,.515,.955), -webkit-transform .3s cubic-bezier(.175,.885,.32,1.275), -webkit-filter .3s cubic-bezier(.175,.885,.32,1.275);
+}
+.button5 {
+    transition: transform .3s cubic-bezier(.175,.885,.32,1.275), bottom .3s cubic-bezier(.175,.885,.32,1.275), background-position 3s cubic-bezier(.455,.03,.515,.955), -webkit-transform .3s cubic-bezier(.175,.885,.32,1.275);
+}
+.button5, .button5 .btn-secondary5 {
+    background-position: 0 50%;
+    bottom: 0;
+}
+.button5 .btn-secondary5 {
+    left: 0;
+    width: 100%;
+    position: absolute;
+    filter: blur(16px);
+    opacity: .9;
+    z-index: -1;
+    transform: scale3d(.9, .9, 1);
+    transition: transform .3s cubic-bezier(.175,.885,.32,1.275), filter .3s cubic-bezier(.175,.885,.32,1.275), bottom .3s cubic-bezier(.175,.885,.32,1.275), background-position 3s cubic-bezier(.455,.03,.515,.955), -webkit-transform .3s cubic-bezier(.175,.885,.32,1.275), -webkit-filter .3s cubic-bezier(.175,.885,.32,1.275);
+}
+.button5:focus, .button5:hover {
+    transform: scale3d(1.1, 1.1, 1);
+    background-position: 100% 50%;
+    outline: none;
+    bottom: 2px;
+}
+.button5:focus .btn-secondary5, .button5:hover .btn-secondary5 {
+    background-position: 100% 50%;
+    filter: blur(25px);
+    bottom: -5px;
+}

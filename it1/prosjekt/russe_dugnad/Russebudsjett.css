@@ -1,0 +1,622 @@
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+html, body {
+  font-size: 16px;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0%;
+  font-family: 'Muli';
+}
+body {
+  background-color: #1b1b1b;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+#content {
+  width: 98%;
+  margin: 10px;
+  padding:2%;
+  margin-top: 50px;
+  display: block;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+#header {
+  background-color: #272727;
+  display: flex;
+  align-items: center;
+  color: #fd5158;
+  font-size: 1.8rem;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+}
+.headertext {
+  width: 50%;
+  text-align: left!important;
+  visibility: hidden;
+}
+.headerlogginn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+  height: 80%;
+}
+.pbheader {
+  height: 80%;
+  width: auto;
+  margin-right: 10%;
+}
+.navnheader {
+  font-size: 1rem;
+}
+.historikk {
+  text-align: left;
+}
+.historikkcell {
+  display: table;
+    height: 70px;
+
+}
+.historikkcell .text {
+  margin: 0;
+  display: table-cell;
+  vertical-align: top;
+  padding: 0px!important;
+}
+.historikkcell p {
+  margin: 0;
+}
+.historikkcell .navn {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.historikkcell .tid {
+  font-size: 0.8rem;
+}
+.historikkpb {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.historikklink {
+  color: white;
+}
+.historikktext {
+  font-size: 0.9rem;
+}
+nav{
+  padding-top: 3rem;
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+}
+#menu{
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  position: relative;
+  padding-top: 50px;
+  z-index: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+.box{
+  color: #fff;
+  white-space: nowrap; /*optional, in case of long text you do not want to wrap */
+  overflow: hidden; /*This property specifies whether to clip content or to add scrollbars when an element's content is too big to fit in a specified area*/
+  text-align: center;
+  font-family: 'muli', sans-serif;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /*optional*/
+}
+.box:hover{
+  color: #fd5157!important;
+}
+.icons{
+  width: 8rem;
+  height: 8rem;
+}
+li a {
+  display: block;
+  height: 100%;
+  z-index: 2;
+}
+.profil {
+  color: white;
+  text-decoration: none;
+}
+.profil:hover {
+  color: #b9b9b9;
+}
+#arrow{
+  height: 13px;
+  width: auto;
+}
+#menuButton {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: larger;
+}
+@media only screen and (max-width: 950px){
+  .icons{display: none;}
+.historikkcell {
+  height: 80px;
+}
+}
+@media only screen and (min-width: 950px){
+  .dropdown-content {
+    margin-left: 22px;
+  }
+}
+@media only screen and (min-width: 751px){
+  #menuButton{display: none;}
+  nav{display: block!important; }
+  .dropdown-content {
+    visibility: hidden;
+    position: absolute;
+    background-color: #1b1b1b;
+    z-index: 2;
+    font-size: 1.2rem;
+  }
+  .dropdown:hover .dropdown-content {
+    visibility: visible!important;
+  }
+  #breaker{
+    font-size: 1rem;
+    color: green;
+  }
+  .video{
+    width: 700px;
+    height: 350px;
+  }
+  .hero{
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 751px){
+  nav {
+    background-color: #272727;
+    padding-top: 0!important;
+    padding-left: 0.5rem;
+    margin-top: 25px;
+    display: none;
+  }
+  #menu{
+    flex-direction: column;
+  }
+  .dropdown-content {
+    background-color: #272727;
+    position: relative;
+    text-align: left;
+    font-size: 1rem;
+    display: none;
+    visibility: visible;
+    margin-top: 5px;
+    width: 100%;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block!important;
+  }
+}
+@media only screen and (max-width: 950px) and (min-width: 751px){
+   .active {
+     text-decoration: underline;
+   }
+
+}
+.dropdown {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  border: none;
+}
+input[type=file] {
+  display: none;
+}
+h3 {
+  margin: 0;
+}
+table {
+  margin: auto;
+}
+td {
+  vertical-align: middle;
+}
+span {
+font-weight: normal;
+}
+.inntekttabell {
+  border: 1px solid black;
+  border-collapse: collapse;
+  background-color: #474747;
+  text-align: center;
+}
+.dugnadtabell {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: 3%;
+  display: flex;
+  justify-content: center;
+  background-color: #474747;
+  text-align: center;
+}
+.tabellcelle {
+  border: 1px solid black;
+  padding: 10px 20px;
+}
+.input {
+  border: 0;
+}
+.deleteupdatebutton {
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-family: Muli;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+.deleteupdatebutton:hover {
+   cursor: pointer;
+   color: #a1a1a1;
+}
+ .button {
+   background-color: #474747;
+   color: #fd5157;
+   border: none;
+   padding: 4px;
+   text-decoration: none;
+   font-size: 1rem;
+   font-family: Muli;
+ }
+ .button:hover{
+   cursor: pointer;
+ }
+ .btncell {
+   text-align: left;
+ }
+ .rad {
+   text-align: center;
+   width: 100%;
+   padding: 7px;
+ }
+ .dugnader {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   flex-wrap: wrap;
+ }
+ .bilde {
+   height: 30px;
+   width: 30px;
+   margin: 1px;
+ }
+ .pbhover {
+   position: relative;
+   display: inline-block;
+   cursor: pointer;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+ }
+ .pbhover [class*="navn"]  {
+   visibility: hidden;
+   background-color: black;
+   color: white;
+   text-align: center;
+   padding: 17%;
+   font-size: 0.75rem;
+   position: absolute;
+   z-index: 1;
+   bottom: 125%;
+   left: 20px;
+   margin-left:-27px;
+ }
+.pbhover .navn-rediger {
+  margin-left: -32px;
+}
+.pbhover .navn-slett {
+  margin-left: -24px;
+}
+ .pbhover [class*="navn"]::after {
+   content: "";
+   position: absolute;
+   top: 100%;
+   left: 50%;
+   margin-left: -5px;
+   border-width: 5px;
+   border-style: solid;
+   border-color: black transparent transparent transparent;
+ }
+ .pbhover:hover > [class*="navn"]  {
+   visibility: visible;
+ }
+.logginn {
+  border: none;
+  font-size: 1rem;
+  color: #fd5158;
+  background-color: #474747;
+  margin-left: 10%;
+  height: 70%;
+  width: 15%;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 70px;
+  font-family: Muli;
+}
+.icon {
+  height: 80%;
+  width: auto;
+}
+.menubutton {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+[id^=updateModal], [id$=Modal] {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 200;
+
+}
+.modal-content {
+    background-color: #353535;
+    margin: 10% auto;
+    padding: 20px;
+    width: 30%;
+    min-width: 200px;
+    overflow-y: hidden;
+    left: 0;
+    right: 0;
+    z-index: 200;
+
+}
+.modalform {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.modalform h2 {
+  text-align: left;
+}
+.modalform td {
+  width: 50%;
+  margin: 0;
+    display: inline-block;
+}
+.modalform tbody{
+  width: 100%;
+}
+.modalform table {
+  width: 100%;
+}
+.modalform input[type=text], .modalform input[type=number], .modalform input[type=password] {
+  width: 100%;
+}
+.modalform form {
+  margin: 0 auto;
+}
+.logginnbutton {
+  border: none;
+  font-size: 1rem;
+  color: black;
+  background-color: #474747;
+  padding: 1%;
+  cursor: pointer;
+}
+#progressbar {
+  width: 100%;
+  float: left;
+  height: 100%;
+  display: flex;
+  padding: 2%;
+  background-color: #272727;
+  align-items: center;
+  justify-content: space-between;
+}
+#bar {
+  display: inline-block;
+  color: #fd5157;
+  justify-content: center;
+  background-color: #474747;
+  text-align: center;
+  height: 10%;
+  max-width: 100%;
+}
+#border {
+  width:83%;
+  background-color: #131313;
+  border: inherit;
+}
+.label {
+  width: 70px;
+  display: inline-block;
+  color: #fd5157;
+}
+.labelright {
+  text-align: right;
+}
+#extralabels {
+  color: #fd5157;
+  display: none;
+  height: 20%;
+  width: 100%;
+}
+footer {
+  background-color:#272727;
+  height: 100px;
+}
+[class*="close"] {
+    color: #aaa;
+    float: right;
+    font-size: 2rem;
+    font-weight: bold;
+}
+[class*="close"]:hover, [class*="close"]:focus{
+    color: #474747;
+    text-decoration: none;
+    cursor: pointer;
+}
+[class*="col-"] {
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+ .col-1 {width: 8.33%;}
+ .col-2 {width: 16.66%;}
+ .col-3 {width: 25%;}
+ .col-4 {width: 33.33%;}
+ .col-5 {width: 41.66%;}
+ .col-6 {width: 50%;}
+ .col-7 {width: 58.33%;}
+ .col-8 {width: 66.66%;}
+ .col-9 {width: 75%;}
+ .col-10 {width: 83.33%;}
+ .col-11 {width: 91.66%;}
+ .col-12 {width: 100%;}
+
+@media only screen and (max-width: 700px){
+ .col-m-1 {width: 8.33%;}
+ .col-m-2 {width: 16.66%;}
+ .col-m-3 {width: 25%;}
+ .col-m-4 {width: 33.33%;}
+ .col-m-5 {width: 41.66%;}
+ .col-m-6 {width: 50%;}
+ .col-m-7 {width: 58.33%;}
+ .col-m-8 {width: 66.66%;}
+ .col-m-9 {width: 75%;}
+ .col-m-10 {width: 83.33%;}
+ .col-m-11 {width: 91.66%;}
+ .col-m-12 {width: 100%;}
+body {
+   font-size: 14px;
+ }
+ .navncelle {
+   width: 100%;
+   text-align: center;
+ }
+ .logginn {
+   font-size: 0.9rem;
+ }
+ .modal-content {
+   width: 80%;
+   min-width: none;
+   position: relative;
+ top: 50%;
+ transform: translateY(-50%);
+ margin: auto;
+ text-align: center;
+ }
+ tr td {
+   display: block;
+   text-align: center;
+   padding: 5px;
+ }
+ .tabellcelle {
+   display: table-cell;
+ }
+ th {
+   text-align: center;
+ }
+.modalform td {
+  text-align: left;
+}
+#headerpofil {
+  float: left;
+}
+.headerlogginn {
+  width: 100%;
+}
+.headertext {
+  display: none;
+}
+.button {
+  font-size: 0.8rem;
+}
+}
+@media only screen and (min-width: 700px) and (max-width: 1156px){
+    .col-t-1 {width: 8.33%;}
+    .col-t-2 {width: 16.66%;}
+    .col-t-3 {width: 25%;}
+    .col-t-4 {width: 33.33%;}
+    .col-t-5 {width: 41.66%;}
+    .col-t-6 {width: 50%;}
+    .col-t-7 {width: 58.33%;}
+    .col-t-8 {width: 66.66%;}
+    .col-t-9 {width: 75%;}
+    .col-t-10 {width: 83.33%;}
+    .col-t-11 {width: 91.66%;}
+    .col-t-12 {width: 100%;}
+
+    .logginn {
+      font-size: 0.9rem;
+    }
+    .modal-content {
+      width: 50%;
+      .modal-content {
+        width: 80%;
+        min-width: none;
+        position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: auto;
+      text-align: center;
+      }
+}
+@media only screen and (min-width: 1400px){
+  .col-l-1 {width: 8.33%;}
+  .col-l-2 {width: 16.66%;}
+  .col-l-3 {width: 25%;}
+  .col-l-4 {width: 33.33%;}
+  .col-l-5 {width: 41.66%;}
+  .col-l-6 {width: 50%;}
+  .col-l-7 {width: 58.33%;}
+  .col-l-8 {width: 66.66%;}
+  .col-l-9 {width: 75%;}
+  .col-l-10 {width: 83.33%;}
+  .col-l-11 {width: 91.66%;}
+  .col-l-12 {width: 100%;}
+}
+@media only screen and (max-width: 375px){
+  .modal-content {
+    width: 300px;
+    max-width: 350px;
+  }
+
+}
