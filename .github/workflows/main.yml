@@ -16,4 +16,4 @@ jobs:
       with:
         server: ftp.haldenvgs.net
         username: it@haldenvgs.net
-        password: ${{ secrets.ftp_password }}
+        password: ${{ secrets.it_ftp_password }}
