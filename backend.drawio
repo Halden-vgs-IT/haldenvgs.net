@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-12-18T09:33:24.433Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="wNucji-w3KBFXRyFQPV7" version="14.0.5" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-18T09:36:45.743Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="eUT9ESCggVyKYVjiTdta" version="14.0.5" type="github">
   <diagram id="y_WF_16KQtRQDIBRnhdE" name="Page-1">
-    <mxGraphModel dx="593" dy="313" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1038" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -74,7 +74,7 @@
           <mxGeometry x="520" width="550" height="280" as="geometry" />
         </mxCell>
         <mxCell id="lQmjGuHinmiFMPGulIB2-14" value="" style="group" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="550" y="40" width="480" height="220" as="geometry" />
+          <mxGeometry x="550" y="40" width="540" height="230" as="geometry" />
         </mxCell>
         <mxCell id="lQmjGuHinmiFMPGulIB2-2" value="Serveren" style="ellipse;whiteSpace=wrap;html=1;" parent="lQmjGuHinmiFMPGulIB2-14" vertex="1">
           <mxGeometry x="180" width="120" height="80" as="geometry" />
@@ -105,6 +105,9 @@
             <mxPoint x="340" y="180" as="sourcePoint" />
             <mxPoint x="390" y="130" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="N8kl3z8OAgdSNbwUKV5s-2" value="(Bruker FTP Deploy, Action)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="lQmjGuHinmiFMPGulIB2-14">
+          <mxGeometry x="350" y="210" width="160" height="20" as="geometry" />
         </mxCell>
         <mxCell id="N8kl3z8OAgdSNbwUKV5s-1" value="Oppsett av vårt system" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="727.5" y="10" width="125" height="20" as="geometry" />
