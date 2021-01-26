@@ -17,3 +17,4 @@ jobs:
         server: ftp.domeneshop.no
         username: haldenvgs
         password: ${{ secrets.ftp_password }}
+        server-dir: www/
