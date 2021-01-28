@@ -111,7 +111,8 @@ $('document').ready(function() {
 
     function tid(vind) {
         if (vind == 0) {
-            vind = 0.000001;
+            vind = 0.000001;
+
         }
         var radius = 68;
         

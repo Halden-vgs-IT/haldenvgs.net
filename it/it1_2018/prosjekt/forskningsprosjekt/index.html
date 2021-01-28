@@ -1,371 +1,741 @@
-<!DOCTYPE html>
-<html lang="no">
-<head>
-    <!-- Meta Tags -->
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- ======== -->
-    <!-- Generelt -->
-    <title>Forskningsoppdrag</title>
-    <link rel="icon" href="images/icon.png">
-    <!-- =========== -->
-    <!-- Skrifttyper -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!-- ========== -->
-    <!-- Javascript -->
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="javascript/rellax.min.js"></script>
-    <script src="javascript/rellax.js"></script>
-    <!-- === -->
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.3/css/line.css">
-</head>
-<body>
-    <nav id="navbar" class="flexbox">
-        <div id="nav-button">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <ul class="navbar-items flexbox-left">
-            <li class="navbar-item" id="seksjon1-link"><a data-page="seksjon1" id="nav-item1" class="navbar-item-inner flexbox"><i class="uil uil-cloud-moon"></i> Seksjon1</a></li>
-            <li class="navbar-item" id="seksjon2-link"><a data-page="seksjon2" id="nav-item2" class="navbar-item-inner flexbox"><i class="uil uil-sunset"></i> Seksjon2</a></li>
-            <li class="navbar-item" id="seksjon3-link"><a data-page="seksjon3" id="nav-item3" class="navbar-item-inner flexbox"><i class="uil uil-mountains-sun"></i> Seksjon3</a></li>
-            <li class="navbar-item" id="seksjon4-link"><a data-page="seksjon4" id="nav-item4" class="navbar-item-inner flexbox"><i class="uil uil-image-v"></i> Galleri</a></li>
-        </ul>
-    </nav>
-    <div id="menu" class="flexbox">
-        <ul class="menu-items flexbox-left-col">
-            <li class="menu-item"><a data-page="seksjon1" class="menu-item-inner flexbox"><i class="uil uil-cloud-moon"></i> Seksjon1</a></li>
-            <li class="menu-item"><a data-page="seksjon2" class="menu-item-inner flexbox"><i class="uil uil-sunset"></i> Seksjon2</a></li>
-            <li class="menu-item"><a data-page="seksjon3" class="menu-item-inner flexbox"><i class="uil uil-mountains-sun"></i> Seksjon3</a></li>
-            <li class="menu-item"><a data-page="seksjon4" class="menu-item-inner flexbox"><i class="uil uil-image-v"></i> Galleri</a></li>
-        </ul>
-    </div>
-    <header id="header" class="flexbox-col">
-
-        <h1></h1>
-        <p>Med teknologi og forskningslære 2</p>
-
-        <div class="overlay"></div>
-        <img src="bilder/forside.jpg" alt="">
-        <!-- <img class="rellax" data-rellax-speed="-7" src="bilder/forside.jpg" alt=""> -->
-
-    </header>
-    <main id="main">
-
-        <section data-index="0" class="seksjon1">
-            <h2 class="seksjon-tittel">Innledning</h2>
-            <div class="content">
-                <p>I høst semesteret av 2020 har elever fra Halden videregående deltatt på en organisert båttur i Oslofjorden som et prosjekt i det studieforberedende programfaget Teknologi og Forskningslære 2. Formålet med dette prosjektet var hovedsakelig å analysere vannets egenskaper i Oslofjorden på 3 forskjellige steder. Her undersøkte elevene konsentrasjonen av ulike salter i vannet, mengden av mikroplast og plankton. I tillegg så gruppen litt på livet i Oslofjorden, som blant annet fiskearter og deres unike egenskaper.</p>
-                <div class="image-content">
-                    <div class="image-wrapper flexbox">
-                        <img src="bilder/skog.jpg" alt="">
-                    </div>
-                    <div class="text-wrapper">
-                        <p>Båtturen startet med litt undervisning om hvordan de forskjellige målingene skulle gjennomføres på båten. Her fikk elevene en del kunnskap om hvilke instrumenter man bruker til å måle plankton, mikroplast, vanntemperatur og hvordan en kan finne gjenstander på havbunnen. Denne artikkelen vil inneholde en mer detaljert beskrivelse for hver måling som ble gjennomført og en forklaring på hva resultatene av målingene betyr for Oslofjorden i sin helhet.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="button-wrapper">
-                <button type="button" class="button btn-primary"><i class="uil uil-rainbow"></i> Rainbow<div class="btn-secondary"></div></button>
-            </div>
-        </section>
-
-        <section data-index="1" class="seksjon2">
-            <h2 class="seksjon-tittel">Seksjon2</h2>
-
-        </section>
-
-        <section data-index="2" class="seksjon3">
-            <h2 class="seksjon-tittel">Seksjon3</h2>
-
-        </section>
-
-        <section data-index="3" class="seksjon4">
-            <h2 class="seksjon-tittel">Galleri</h2>
-            <div class="gallery">
-                <div id="g-item1" class="gallery-item">
-                    <div class="gallery-img-wrapper flexbox">
-                        <img src="bilder/baten.jpg" alt="">
-                    </div>
-                </div>
-                <div id="g-item2" class="gallery-item">
-                    <div class="gallery-img-wrapper flexbox">
-                        <img src="bilder/skog.jpg" alt="">
-                    </div>
-                </div>
-                <div id="g-item3" class="gallery-item">
-                    <div class="gallery-img-wrapper flexbox">
-                        <img src="bilder/buksesele.jpg" alt="">
-                    </div>
-                </div>
-                <div id="g-item4" class="gallery-item">
-                    <div class="gallery-img-wrapper flexbox">
-                        <img src="bilder/hestehale.jpg" alt="">
-                    </div>
-                </div>
-                <div id="g-item5" class="gallery-item">
-                    <div class="gallery-img-wrapper flexbox">
-                        <img src="bilder/pekepavannet.jpg" alt="">
-                    </div>
-                </div>
-                <div id="g-item6" class="gallery-item">
-                    <div class="gallery-img-wrapper flexbox">
-                        <img src="bilder/mariusgenser.jpg" alt="">
-                    </div>
-                </div>
-                <div id="g-item7" class="gallery-item">
-                    <div class="gallery-img-wrapper flexbox">
-                        <img src="bilder/flagg.jpg" alt="">
-                    </div>
-                </div>
-                <div id="g-item8" class="gallery-item">
-                    <div class="gallery-img-wrapper flexbox">
-                        <img src="bilder/storfleks.jpg" alt="">
-                    </div>
-                </div>
-                <div id="g-item9" class="gallery-item">
-                    <div class="gallery-img-wrapper flexbox">
-                        <img src="bilder/gronnbotte.jpg" alt="">
-                    </div>
-                </div>
-                <div id="g-item10" class="gallery-item">
-                    <div class="gallery-img-wrapper flexbox">
-                        <img src="bilder/draitrad.jpg" alt="">
-                    </div>
-                </div>
-                <div id="g-item11" class="gallery-item">
-                    <div class="gallery-img-wrapper flexbox">
-                        <img src="bilder/refleksjakke.jpg" alt="">
-                    </div>
-                </div>
-                <div id="g-item12" class="gallery-item">
-                    <div class="gallery-img-wrapper flexbox">
-                        <img src="bilder/rov.jpg" alt="">
-                    </div>
-                </div>
-                <div id="g-item13" class="gallery-item">
-                    <div class="gallery-img-wrapper flexbox">
-                        <img src="bilder/torpedo.jpg" alt="">
-                    </div>
-                </div>
-                <div id="g-item14" class="gallery-item">
-                    <div class="gallery-img-wrapper flexbox">
-                        <img src="bilder/slep.jpg" alt="">
-                    </div>
-                </div>
-                <div id="g-item15" class="gallery-item">
-                    <div class="gallery-img-wrapper flexbox">
-                        <img src="bilder/tavle.jpg" alt="">
-                    </div>
-                </div>
-                <div id="g-item16" class="gallery-item">
-                    <div class="gallery-img-wrapper flexbox">
-                        <img src="bilder/storskjerm.jpg" alt="">
-                    </div>
-                </div>
-                <div id="g-item17" class="gallery-item">
-                    <div class="gallery-img-wrapper flexbox">
-                        <img src="bilder/mikroskop.jpg" alt="">
-                    </div>
-                </div>
-                <div id="g-item18" class="gallery-item">
-                    <div class="gallery-img-wrapper flexbox">
-                        <img src="bilder/pepe.jpg" alt="">
-                    </div>
-                </div>
-                <div id="g-item19" class="gallery-item">
-                    <div class="gallery-img-wrapper flexbox">
-                        <img src="bilder/kvinne.jpg" alt="">
-                    </div>
-                </div>
-                <div id="g-item20" class="gallery-item">
-                    <div class="gallery-img-wrapper flexbox">
-                        <img src="bilder/krabber.jpg" alt="">
-                    </div>
-                </div>
-                <div id="g-item21" class="gallery-item">
-                    <div class="gallery-img-wrapper flexbox">
-                        <img src="bilder/horisont.jpg" alt="">
-                    </div>
-                </div>
-                <div id="g-item22" class="gallery-item">
-                    <div class="gallery-img-wrapper flexbox">
-                        <img src="bilder/fiskegarn.jpg" alt="">
-                    </div>
-                </div>
-                <div id="g-item23" class="gallery-item">
-                    <div class="gallery-img-wrapper flexbox">
-                        <img src="bilder/flyndre.jpg" alt="">
-                    </div>
-                </div>
-                <div id="g-item24" class="gallery-item">
-                    <div class="gallery-img-wrapper flexbox">
-                        <img src="bilder/gladifisk.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div id="g-img1-wrapper" class="g-large-wrapper flexbox">
-                <div class="g-image-wrapper-ver flexbox">
-                    <img src="bilder/baten.jpg" alt="">
-                </div>
-                <div class="g-overlay"></div>
-            </div>
-            <div id="g-img2-wrapper" class="g-large-wrapper flexbox">
-                <div class="g-image-wrapper-ver flexbox">
-                    <img src="bilder/skog.jpg" alt="">
-                </div>
-                <div class="g-overlay"></div>
-            </div>
-            <div id="g-img3-wrapper" class="g-large-wrapper flexbox">
-                <div class="g-image-wrapper-ver flexbox">
-                    <img src="bilder/buksesele.jpg" alt="">
-                </div>
-                <div class="g-overlay"></div>
-            </div>
-            <div id="g-img4-wrapper" class="g-large-wrapper flexbox">
-                <div class="g-image-wrapper-ver flexbox">
-                    <img src="bilder/hestehale.jpg" alt="">
-                </div>
-                <div class="g-overlay"></div>
-            </div>
-            <div id="g-img5-wrapper" class="g-large-wrapper flexbox">
-                <div class="g-image-wrapper-ver flexbox">
-                    <img src="bilder/pekepavannet.jpg" alt="">
-                </div>
-                <div class="g-overlay"></div>
-            </div>
-            <div id="g-img6-wrapper" class="g-large-wrapper flexbox">
-                <div class="g-image-wrapper-ver flexbox">
-                    <img src="bilder/mariusgenser.jpg" alt="">
-                </div>
-                <div class="g-overlay"></div>
-            </div>
-            <div id="g-img7-wrapper" class="g-large-wrapper flexbox">
-                <div class="g-image-wrapper-ver flexbox">
-                    <img src="bilder/flagg.jpg" alt="">
-                </div>
-                <div class="g-overlay"></div>
-            </div>
-            <div id="g-img8-wrapper" class="g-large-wrapper flexbox">
-                <div class="g-image-wrapper-ver flexbox">
-                    <img src="bilder/storfleks.jpg" alt="">
-                </div>
-                <div class="g-overlay"></div>
-            </div>
-            <div id="g-img9-wrapper" class="g-large-wrapper flexbox">
-                <div class="g-image-wrapper-ver flexbox">
-                    <img src="bilder/gronnbotte.jpg" alt="">
-                </div>
-                <div class="g-overlay"></div>
-            </div>
-            <div id="g-img10-wrapper" class="g-large-wrapper flexbox">
-                <div class="g-image-wrapper-ver flexbox">
-                    <img src="bilder/draitrad.jpg" alt="">
-                </div>
-                <div class="g-overlay"></div>
-            </div>
-            <div id="g-img11-wrapper" class="g-large-wrapper flexbox">
-                <div class="g-image-wrapper-ver flexbox">
-                    <img src="bilder/refleksjakke.jpg" alt="">
-                </div>
-                <div class="g-overlay"></div>
-            </div>
-            <div id="g-img12-wrapper" class="g-large-wrapper flexbox">
-                <div class="g-image-wrapper-ver flexbox">
-                    <img src="bilder/rov.jpg" alt="">
-                </div>
-                <div class="g-overlay"></div>
-            </div>
-            <div id="g-img13-wrapper" class="g-large-wrapper flexbox">
-                <div class="g-image-wrapper-ver flexbox">
-                    <img src="bilder/torpedo.jpg" alt="">
-                </div>
-                <div class="g-overlay"></div>
-            </div>
-            <div id="g-img14-wrapper" class="g-large-wrapper flexbox">
-                <div class="g-image-wrapper-ver flexbox">
-                    <img src="bilder/slep.jpg" alt="">
-                </div>
-                <div class="g-overlay"></div>
-            </div>
-            <div id="g-img15-wrapper" class="g-large-wrapper flexbox">
-                <div class="g-image-wrapper-ver flexbox">
-                    <img src="bilder/tavle.jpg" alt="">
-                </div>
-                <div class="g-overlay"></div>
-            </div>
-            <div id="g-img16-wrapper" class="g-large-wrapper flexbox">
-                <div class="g-image-wrapper-ver flexbox">
-                    <img src="bilder/storskjerm.jpg" alt="">
-                </div>
-                <div class="g-overlay"></div>
-            </div>
-            <div id="g-img17-wrapper" class="g-large-wrapper flexbox">
-                <div class="g-image-wrapper-ver flexbox">
-                    <img src="bilder/mikroskop.jpg" alt="">
-                </div>
-                <div class="g-overlay"></div>
-            </div>
-            <div id="g-img18-wrapper" class="g-large-wrapper flexbox">
-                <div class="g-image-wrapper-ver flexbox">
-                    <img src="bilder/pepe.jpg" alt="">
-                </div>
-                <div class="g-overlay"></div>
-            </div>
-            <div id="g-img19-wrapper" class="g-large-wrapper flexbox">
-                <div class="g-image-wrapper-ver flexbox">
-                    <img src="bilder/kvinne.jpg" alt="">
-                </div>
-                <div class="g-overlay"></div>
-            </div>
-            <div id="g-img20-wrapper" class="g-large-wrapper flexbox">
-                <div class="g-image-wrapper-ver flexbox">
-                    <img src="bilder/krabber.jpg" alt="">
-                </div>
-                <div class="g-overlay"></div>
-            </div>
-            <div id="g-img21-wrapper" class="g-large-wrapper flexbox">
-                <div class="g-image-wrapper-ver flexbox">
-                    <img src="bilder/horisont.jpg" alt="">
-                </div>
-                <div class="g-overlay"></div>
-            </div>
-            <div id="g-img22-wrapper" class="g-large-wrapper flexbox">
-                <div class="g-image-wrapper-ver flexbox">
-                    <img src="bilder/fiskegarn.jpg" alt="">
-                </div>
-                <div class="g-overlay"></div>
-            </div>
-            <div id="g-img23-wrapper" class="g-large-wrapper flexbox">
-                <div class="g-image-wrapper-ver flexbox">
-                    <img src="bilder/flyndre.jpg" alt="">
-                </div>
-                <div class="g-overlay"></div>
-            </div>
-            <div id="g-img24-wrapper" class="g-large-wrapper flexbox">
-                <div class="g-image-wrapper-ver flexbox">
-                    <img src="bilder/gladifisk.jpg" alt="">
-                </div>
-                <div class="g-overlay"></div>
-            </div>
-        </section>
-
-    </main>
-</body>
-<script src="javascript/script.js"></script>
-<script src="javascript/gallery.js"></script>
-<script>
-
-    var rellax = new Rellax('.rellax');
-
-</script>
+<!DOCTYPE html>
+
+<html lang="no">
+
+<head>
+
+    <!-- Meta Tags -->
+
+    <meta charset="UTF-8">
+
+    <meta name="description" content="">
+
+    <meta name="keywords" content="">
+
+    <meta name="author" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ======== -->
+
+    <!-- Generelt -->
+
+    <title>Forskningsoppdrag</title>
+
+    <link rel="icon" href="images/icon.png">
+
+    <!-- =========== -->
+
+    <!-- Skrifttyper -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- ========== -->
+
+    <!-- Javascript -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="javascript/rellax.min.js"></script>
+
+    <script src="javascript/rellax.js"></script>
+
+    <!-- === -->
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.3/css/line.css">
+
+</head>
+
+<body>
+
+    <nav id="navbar" class="flexbox">
+
+        <div id="nav-button">
+
+            <span></span>
+
+            <span></span>
+
+            <span></span>
+
+            <span></span>
+
+        </div>
+
+        <ul class="navbar-items flexbox-left">
+
+            <li class="navbar-item" id="seksjon1-link"><a data-page="seksjon1" id="nav-item1" class="navbar-item-inner flexbox"><i class="uil uil-cloud-moon"></i> Seksjon1</a></li>
+
+            <li class="navbar-item" id="seksjon2-link"><a data-page="seksjon2" id="nav-item2" class="navbar-item-inner flexbox"><i class="uil uil-sunset"></i> Seksjon2</a></li>
+
+            <li class="navbar-item" id="seksjon3-link"><a data-page="seksjon3" id="nav-item3" class="navbar-item-inner flexbox"><i class="uil uil-mountains-sun"></i> Seksjon3</a></li>
+
+            <li class="navbar-item" id="seksjon4-link"><a data-page="seksjon4" id="nav-item4" class="navbar-item-inner flexbox"><i class="uil uil-image-v"></i> Galleri</a></li>
+
+        </ul>
+
+    </nav>
+
+    <div id="menu" class="flexbox">
+
+        <ul class="menu-items flexbox-left-col">
+
+            <li class="menu-item"><a data-page="seksjon1" class="menu-item-inner flexbox"><i class="uil uil-cloud-moon"></i> Seksjon1</a></li>
+
+            <li class="menu-item"><a data-page="seksjon2" class="menu-item-inner flexbox"><i class="uil uil-sunset"></i> Seksjon2</a></li>
+
+            <li class="menu-item"><a data-page="seksjon3" class="menu-item-inner flexbox"><i class="uil uil-mountains-sun"></i> Seksjon3</a></li>
+
+            <li class="menu-item"><a data-page="seksjon4" class="menu-item-inner flexbox"><i class="uil uil-image-v"></i> Galleri</a></li>
+
+        </ul>
+
+    </div>
+
+    <header id="header" class="flexbox-col">
+
+
+
+        <h1></h1>
+
+        <p>Med teknologi og forskningslære 2</p>
+
+
+
+        <div class="overlay"></div>
+
+        <img src="bilder/forside.jpg" alt="">
+
+        <!-- <img class="rellax" data-rellax-speed="-7" src="bilder/forside.jpg" alt=""> -->
+
+
+
+    </header>
+
+    <main id="main">
+
+
+
+        <section data-index="0" class="seksjon1">
+
+            <h2 class="seksjon-tittel">Innledning</h2>
+
+            <div class="content">
+
+                <p>I høst semesteret av 2020 har elever fra Halden videregående deltatt på en organisert båttur i Oslofjorden som et prosjekt i det studieforberedende programfaget Teknologi og Forskningslære 2. Formålet med dette prosjektet var hovedsakelig å analysere vannets egenskaper i Oslofjorden på 3 forskjellige steder. Her undersøkte elevene konsentrasjonen av ulike salter i vannet, mengden av mikroplast og plankton. I tillegg så gruppen litt på livet i Oslofjorden, som blant annet fiskearter og deres unike egenskaper.</p>
+
+                <div class="image-content">
+
+                    <div class="image-wrapper flexbox">
+
+                        <img src="bilder/skog.jpg" alt="">
+
+                    </div>
+
+                    <div class="text-wrapper">
+
+                        <p>Båtturen startet med litt undervisning om hvordan de forskjellige målingene skulle gjennomføres på båten. Her fikk elevene en del kunnskap om hvilke instrumenter man bruker til å måle plankton, mikroplast, vanntemperatur og hvordan en kan finne gjenstander på havbunnen. Denne artikkelen vil inneholde en mer detaljert beskrivelse for hver måling som ble gjennomført og en forklaring på hva resultatene av målingene betyr for Oslofjorden i sin helhet.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="button-wrapper">
+
+                <button type="button" class="button btn-primary"><i class="uil uil-rainbow"></i> Rainbow<div class="btn-secondary"></div></button>
+
+            </div>
+
+        </section>
+
+
+
+        <section data-index="1" class="seksjon2">
+
+            <h2 class="seksjon-tittel">Seksjon2</h2>
+
+
+
+        </section>
+
+
+
+        <section data-index="2" class="seksjon3">
+
+            <h2 class="seksjon-tittel">Seksjon3</h2>
+
+
+
+        </section>
+
+
+
+        <section data-index="3" class="seksjon4">
+
+            <h2 class="seksjon-tittel">Galleri</h2>
+
+            <div class="gallery">
+
+                <div id="g-item1" class="gallery-item">
+
+                    <div class="gallery-img-wrapper flexbox">
+
+                        <img src="bilder/baten.jpg" alt="">
+
+                    </div>
+
+                </div>
+
+                <div id="g-item2" class="gallery-item">
+
+                    <div class="gallery-img-wrapper flexbox">
+
+                        <img src="bilder/skog.jpg" alt="">
+
+                    </div>
+
+                </div>
+
+                <div id="g-item3" class="gallery-item">
+
+                    <div class="gallery-img-wrapper flexbox">
+
+                        <img src="bilder/buksesele.jpg" alt="">
+
+                    </div>
+
+                </div>
+
+                <div id="g-item4" class="gallery-item">
+
+                    <div class="gallery-img-wrapper flexbox">
+
+                        <img src="bilder/hestehale.jpg" alt="">
+
+                    </div>
+
+                </div>
+
+                <div id="g-item5" class="gallery-item">
+
+                    <div class="gallery-img-wrapper flexbox">
+
+                        <img src="bilder/pekepavannet.jpg" alt="">
+
+                    </div>
+
+                </div>
+
+                <div id="g-item6" class="gallery-item">
+
+                    <div class="gallery-img-wrapper flexbox">
+
+                        <img src="bilder/mariusgenser.jpg" alt="">
+
+                    </div>
+
+                </div>
+
+                <div id="g-item7" class="gallery-item">
+
+                    <div class="gallery-img-wrapper flexbox">
+
+                        <img src="bilder/flagg.jpg" alt="">
+
+                    </div>
+
+                </div>
+
+                <div id="g-item8" class="gallery-item">
+
+                    <div class="gallery-img-wrapper flexbox">
+
+                        <img src="bilder/storfleks.jpg" alt="">
+
+                    </div>
+
+                </div>
+
+                <div id="g-item9" class="gallery-item">
+
+                    <div class="gallery-img-wrapper flexbox">
+
+                        <img src="bilder/gronnbotte.jpg" alt="">
+
+                    </div>
+
+                </div>
+
+                <div id="g-item10" class="gallery-item">
+
+                    <div class="gallery-img-wrapper flexbox">
+
+                        <img src="bilder/draitrad.jpg" alt="">
+
+                    </div>
+
+                </div>
+
+                <div id="g-item11" class="gallery-item">
+
+                    <div class="gallery-img-wrapper flexbox">
+
+                        <img src="bilder/refleksjakke.jpg" alt="">
+
+                    </div>
+
+                </div>
+
+                <div id="g-item12" class="gallery-item">
+
+                    <div class="gallery-img-wrapper flexbox">
+
+                        <img src="bilder/rov.jpg" alt="">
+
+                    </div>
+
+                </div>
+
+                <div id="g-item13" class="gallery-item">
+
+                    <div class="gallery-img-wrapper flexbox">
+
+                        <img src="bilder/torpedo.jpg" alt="">
+
+                    </div>
+
+                </div>
+
+                <div id="g-item14" class="gallery-item">
+
+                    <div class="gallery-img-wrapper flexbox">
+
+                        <img src="bilder/slep.jpg" alt="">
+
+                    </div>
+
+                </div>
+
+                <div id="g-item15" class="gallery-item">
+
+                    <div class="gallery-img-wrapper flexbox">
+
+                        <img src="bilder/tavle.jpg" alt="">
+
+                    </div>
+
+                </div>
+
+                <div id="g-item16" class="gallery-item">
+
+                    <div class="gallery-img-wrapper flexbox">
+
+                        <img src="bilder/storskjerm.jpg" alt="">
+
+                    </div>
+
+                </div>
+
+                <div id="g-item17" class="gallery-item">
+
+                    <div class="gallery-img-wrapper flexbox">
+
+                        <img src="bilder/mikroskop.jpg" alt="">
+
+                    </div>
+
+                </div>
+
+                <div id="g-item18" class="gallery-item">
+
+                    <div class="gallery-img-wrapper flexbox">
+
+                        <img src="bilder/pepe.jpg" alt="">
+
+                    </div>
+
+                </div>
+
+                <div id="g-item19" class="gallery-item">
+
+                    <div class="gallery-img-wrapper flexbox">
+
+                        <img src="bilder/kvinne.jpg" alt="">
+
+                    </div>
+
+                </div>
+
+                <div id="g-item20" class="gallery-item">
+
+                    <div class="gallery-img-wrapper flexbox">
+
+                        <img src="bilder/krabber.jpg" alt="">
+
+                    </div>
+
+                </div>
+
+                <div id="g-item21" class="gallery-item">
+
+                    <div class="gallery-img-wrapper flexbox">
+
+                        <img src="bilder/horisont.jpg" alt="">
+
+                    </div>
+
+                </div>
+
+                <div id="g-item22" class="gallery-item">
+
+                    <div class="gallery-img-wrapper flexbox">
+
+                        <img src="bilder/fiskegarn.jpg" alt="">
+
+                    </div>
+
+                </div>
+
+                <div id="g-item23" class="gallery-item">
+
+                    <div class="gallery-img-wrapper flexbox">
+
+                        <img src="bilder/flyndre.jpg" alt="">
+
+                    </div>
+
+                </div>
+
+                <div id="g-item24" class="gallery-item">
+
+                    <div class="gallery-img-wrapper flexbox">
+
+                        <img src="bilder/gladifisk.jpg" alt="">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="g-img1-wrapper" class="g-large-wrapper flexbox">
+
+                <div class="g-image-wrapper-ver flexbox">
+
+                    <img src="bilder/baten.jpg" alt="">
+
+                </div>
+
+                <div class="g-overlay"></div>
+
+            </div>
+
+            <div id="g-img2-wrapper" class="g-large-wrapper flexbox">
+
+                <div class="g-image-wrapper-ver flexbox">
+
+                    <img src="bilder/skog.jpg" alt="">
+
+                </div>
+
+                <div class="g-overlay"></div>
+
+            </div>
+
+            <div id="g-img3-wrapper" class="g-large-wrapper flexbox">
+
+                <div class="g-image-wrapper-ver flexbox">
+
+                    <img src="bilder/buksesele.jpg" alt="">
+
+                </div>
+
+                <div class="g-overlay"></div>
+
+            </div>
+
+            <div id="g-img4-wrapper" class="g-large-wrapper flexbox">
+
+                <div class="g-image-wrapper-ver flexbox">
+
+                    <img src="bilder/hestehale.jpg" alt="">
+
+                </div>
+
+                <div class="g-overlay"></div>
+
+            </div>
+
+            <div id="g-img5-wrapper" class="g-large-wrapper flexbox">
+
+                <div class="g-image-wrapper-ver flexbox">
+
+                    <img src="bilder/pekepavannet.jpg" alt="">
+
+                </div>
+
+                <div class="g-overlay"></div>
+
+            </div>
+
+            <div id="g-img6-wrapper" class="g-large-wrapper flexbox">
+
+                <div class="g-image-wrapper-ver flexbox">
+
+                    <img src="bilder/mariusgenser.jpg" alt="">
+
+                </div>
+
+                <div class="g-overlay"></div>
+
+            </div>
+
+            <div id="g-img7-wrapper" class="g-large-wrapper flexbox">
+
+                <div class="g-image-wrapper-ver flexbox">
+
+                    <img src="bilder/flagg.jpg" alt="">
+
+                </div>
+
+                <div class="g-overlay"></div>
+
+            </div>
+
+            <div id="g-img8-wrapper" class="g-large-wrapper flexbox">
+
+                <div class="g-image-wrapper-ver flexbox">
+
+                    <img src="bilder/storfleks.jpg" alt="">
+
+                </div>
+
+                <div class="g-overlay"></div>
+
+            </div>
+
+            <div id="g-img9-wrapper" class="g-large-wrapper flexbox">
+
+                <div class="g-image-wrapper-ver flexbox">
+
+                    <img src="bilder/gronnbotte.jpg" alt="">
+
+                </div>
+
+                <div class="g-overlay"></div>
+
+            </div>
+
+            <div id="g-img10-wrapper" class="g-large-wrapper flexbox">
+
+                <div class="g-image-wrapper-ver flexbox">
+
+                    <img src="bilder/draitrad.jpg" alt="">
+
+                </div>
+
+                <div class="g-overlay"></div>
+
+            </div>
+
+            <div id="g-img11-wrapper" class="g-large-wrapper flexbox">
+
+                <div class="g-image-wrapper-ver flexbox">
+
+                    <img src="bilder/refleksjakke.jpg" alt="">
+
+                </div>
+
+                <div class="g-overlay"></div>
+
+            </div>
+
+            <div id="g-img12-wrapper" class="g-large-wrapper flexbox">
+
+                <div class="g-image-wrapper-ver flexbox">
+
+                    <img src="bilder/rov.jpg" alt="">
+
+                </div>
+
+                <div class="g-overlay"></div>
+
+            </div>
+
+            <div id="g-img13-wrapper" class="g-large-wrapper flexbox">
+
+                <div class="g-image-wrapper-ver flexbox">
+
+                    <img src="bilder/torpedo.jpg" alt="">
+
+                </div>
+
+                <div class="g-overlay"></div>
+
+            </div>
+
+            <div id="g-img14-wrapper" class="g-large-wrapper flexbox">
+
+                <div class="g-image-wrapper-ver flexbox">
+
+                    <img src="bilder/slep.jpg" alt="">
+
+                </div>
+
+                <div class="g-overlay"></div>
+
+            </div>
+
+            <div id="g-img15-wrapper" class="g-large-wrapper flexbox">
+
+                <div class="g-image-wrapper-ver flexbox">
+
+                    <img src="bilder/tavle.jpg" alt="">
+
+                </div>
+
+                <div class="g-overlay"></div>
+
+            </div>
+
+            <div id="g-img16-wrapper" class="g-large-wrapper flexbox">
+
+                <div class="g-image-wrapper-ver flexbox">
+
+                    <img src="bilder/storskjerm.jpg" alt="">
+
+                </div>
+
+                <div class="g-overlay"></div>
+
+            </div>
+
+            <div id="g-img17-wrapper" class="g-large-wrapper flexbox">
+
+                <div class="g-image-wrapper-ver flexbox">
+
+                    <img src="bilder/mikroskop.jpg" alt="">
+
+                </div>
+
+                <div class="g-overlay"></div>
+
+            </div>
+
+            <div id="g-img18-wrapper" class="g-large-wrapper flexbox">
+
+                <div class="g-image-wrapper-ver flexbox">
+
+                    <img src="bilder/pepe.jpg" alt="">
+
+                </div>
+
+                <div class="g-overlay"></div>
+
+            </div>
+
+            <div id="g-img19-wrapper" class="g-large-wrapper flexbox">
+
+                <div class="g-image-wrapper-ver flexbox">
+
+                    <img src="bilder/kvinne.jpg" alt="">
+
+                </div>
+
+                <div class="g-overlay"></div>
+
+            </div>
+
+            <div id="g-img20-wrapper" class="g-large-wrapper flexbox">
+
+                <div class="g-image-wrapper-ver flexbox">
+
+                    <img src="bilder/krabber.jpg" alt="">
+
+                </div>
+
+                <div class="g-overlay"></div>
+
+            </div>
+
+            <div id="g-img21-wrapper" class="g-large-wrapper flexbox">
+
+                <div class="g-image-wrapper-ver flexbox">
+
+                    <img src="bilder/horisont.jpg" alt="">
+
+                </div>
+
+                <div class="g-overlay"></div>
+
+            </div>
+
+            <div id="g-img22-wrapper" class="g-large-wrapper flexbox">
+
+                <div class="g-image-wrapper-ver flexbox">
+
+                    <img src="bilder/fiskegarn.jpg" alt="">
+
+                </div>
+
+                <div class="g-overlay"></div>
+
+            </div>
+
+            <div id="g-img23-wrapper" class="g-large-wrapper flexbox">
+
+                <div class="g-image-wrapper-ver flexbox">
+
+                    <img src="bilder/flyndre.jpg" alt="">
+
+                </div>
+
+                <div class="g-overlay"></div>
+
+            </div>
+
+            <div id="g-img24-wrapper" class="g-large-wrapper flexbox">
+
+                <div class="g-image-wrapper-ver flexbox">
+
+                    <img src="bilder/gladifisk.jpg" alt="">
+
+                </div>
+
+                <div class="g-overlay"></div>
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+</body>
+
+<script src="javascript/script.js"></script>
+
+<script src="javascript/gallery.js"></script>
+
+<script>
+
+
+
+    var rellax = new Rellax('.rellax');
+
+
+
+</script>
+
 </html>
