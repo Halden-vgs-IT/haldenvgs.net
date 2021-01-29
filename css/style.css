@@ -49,6 +49,7 @@ header {
     position: relative;
     display: grid;
     place-items: center;
+    overflow: hidden;
 }
 li {
     padding: 1%;
@@ -56,13 +57,16 @@ li {
  }
 /* Classes */
 .box {
+    color: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     max-width: 70%;
+    z-index: 3;
 }
 .heading {
+    text-align: center;
     font-size: calc(var(--heading) + 3rem);
     margin: 0;
 }
@@ -70,7 +74,20 @@ li {
     font-size: var(--paragraph);
     margin: 0;
     text-align: center;
-
+}
+.header-image {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, .45);
+    z-index: 2;
 }
 .list{
 
@@ -102,11 +119,19 @@ li {
         /* Sizes */
         --heading: 2.4rem;
     }
+    .heading {
+        font-size: calc(var(--heading) + 1.4rem);
+        margin: 0;
+    }
 }
 @media only screen and (max-width: 756px) {
     :root {
         /* Sizes */
         --heading: 2.2rem;
+    }
+    .heading {
+        font-size: calc(var(--heading) + .6rem);
+        margin: 0;
     }
 }
 @media only screen and (max-width: 576px) {
