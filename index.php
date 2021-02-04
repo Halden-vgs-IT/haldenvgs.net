@@ -35,20 +35,20 @@
     <div class="overlay"></div>
     <img class="header-image" src="images/header.jpg" alt="">
 </header>
-<main>
-    <ul class="list">
-        <li>
-            <div class="boxit">
-
-            </div>
-        </li>
-        <li>
-            <div class="boxit">
-
-            </div>
-        </li>
-    </ul>
-</main>
+    <main class="flexbox-col">
+        <ul class="wide">
+            <li>
+                <div class="boxit">
+                    <p class="klasse">IT 2 - 2020/2021</p>
+                    <div class="ehh flexbox-space">
+                        <a><button class="knapp">IT 2 fellesside *ikke satt opp</button></a>
+                        <a href="elever.php"><button class="knapp">Elever</button></a>
+                        <a href="https://databit.haldenvgs.net"><button class="knapp">Lærer: Gunnar Kopperud</button></a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </main>
 </body>
 <script src="javascript/script.js"></script>
 </html>
