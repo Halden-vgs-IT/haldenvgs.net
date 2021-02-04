@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+
+RewriteEngine On
+
+RewriteBase /
+
+RewriteRule ^index.php$ - [L]
+
+RewriteCond %{REQUEST_FILENAME} ^/404/$
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule . /404.html [L]
+
+ErrorDocument 404 http://haldenvgs.net/soundMonkey/404.html
+
+</IfModule>

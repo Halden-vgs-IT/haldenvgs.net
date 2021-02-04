@@ -29,9 +29,11 @@
 <body>
 <header>
     <div class="box">
-        <h1 class="heading">IT på Halden VGS</h1>
-        <p class="par">Herfra kan man se og komme seg til de forskjellige IT-klassene på Porsnes sine nettsider</p>
+        <h1 class="heading">IT på Halden vgs</h1>
+        <p class="par">Her kan du se alle nettsidene til elevene ved Halden VGS</p>
     </div>
+    <div class="overlay"></div>
+    <img class="header-image" src="images/header.jpg" alt="">
 </header>
     <main class="flexbox-col">
         <ul class="wide">
