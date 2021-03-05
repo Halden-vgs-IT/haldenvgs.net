@@ -45,24 +45,97 @@ html, body {
 header {
     height: 80vh;
     width: 100%;
-    background-color: gray;
+    background-color: var(--gray);
     position: relative;
     display: grid;
     place-items: center;
+    overflow: hidden;
 }
 li {
     padding: 1%;
     list-style: none;
  }
 /* Classes */
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flexbox-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.flexbox-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.flexbox-col {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.flexbox-col-left {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.flexbox-col-right {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.flexbox-left-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.flexbox-right-start {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.flexbox-space {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flexbox-col-left-start {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+}
 .box {
+    color: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     max-width: 70%;
+    z-index: 3;
+}
+.ehh {
+    width: 80%;
+    position: relative;
+    left: 10%;
+}
+.wide {
+    width: 80%;
+    margin: 1%;
+    padding: 1%;
+}
+.wide li {
+    width: 100%;
+    padding: 0;
 }
 .heading {
+    text-align: center;
     font-size: calc(var(--heading) + 3rem);
     margin: 0;
 }
@@ -70,20 +143,90 @@ li {
     font-size: var(--paragraph);
     margin: 0;
     text-align: center;
-
+}
+.header-image {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, .45);
+    z-index: 2;
 }
 .list{
 
 }
 .boxit {
-    width: 90%;
-    height: 10vh;
+    width: 100%;
+    min-height: 1vh;
     border-radius: 10px;
     background-color: darkgray;
+    padding: 0.5%;
+}
+.klasse {
+    font-size: calc(var(--paragraph) + 1rem);
+    padding: 0 18%;
+}
+/* Elev text */
+.elev .elevtext {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    font-size: var(--paragraph);
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+}
+.profilbilde {
+    width: 75px;
+    height: 75px;
+}
+.høyre {
+    top: -1%;
+    left: 105%;
+}
+.venstre {
+    top: -1%;
+    right: 105%;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.elev:hover .elevtext {
+    visibility: visible;
 }
 .knapp {
-
+    border-radius: 20px;
+    border: solid var(--black) 1px;
+    background-color:  var(--cyan);
+    text-align: center;
+    font-size: var(--paragraph);
+    text-decoration: none black;
+    cursor: pointer;
+    width: 125%;
+    height: 125%;
 }
+.elev {
+    font-size: calc(var(--heading-large) - 2rem);
+    position: relative;
+    display: inline-block;
+    width: 80%;
+}
+.grid-container {
+    display: grid;
+    align-content: space-evenly;
+    grid-template-columns: auto auto;
+    grid-column-gap: 5%;
+    grid-row-gap: 10%;
+    padding: 5%;
+}
+
 /* @media rules */
 @media only screen and (max-width: 1660px) {
     :root {
@@ -102,11 +245,19 @@ li {
         /* Sizes */
         --heading: 2.4rem;
     }
+    .heading {
+        font-size: calc(var(--heading) + 1.4rem);
+        margin: 0;
+    }
 }
 @media only screen and (max-width: 756px) {
     :root {
         /* Sizes */
         --heading: 2.2rem;
+    }
+    .heading {
+        font-size: calc(var(--heading) + .6rem);
+        margin: 0;
     }
 }
 @media only screen and (max-width: 576px) {

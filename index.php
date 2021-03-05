@@ -30,24 +30,26 @@
 <body>
 <header>
     <div class="box">
-        <h1 class="heading">Velkommen til IT</h1>
-        <p class="par">Herfra kan man se og komme seg til de forskjellige IT-klassene på Porsnes sine nettsider</p>
+        <h1 class="heading">IT på Halden vgs</h1>
+        <p class="par">Her kan du se alle nettsidene til elevene ved Halden VGS</p>
     </div>
+    <div class="overlay"></div>
+    <img class="header-image" src="images/header.jpg" alt="">
 </header>
-<main>
-    <ul class="list">
-        <li>
-            <div class="boxit">
-
-            </div>
-        </li>
-        <li>
-            <div class="boxit">
-
-            </div>
-        </li>
-    </ul>
-</main>
+    <main class="flexbox-col">
+        <ul class="wide">
+            <li>
+                <div class="boxit">
+                    <p class="klasse">IT 2 - 2020/2021</p>
+                    <div class="ehh flexbox-space">
+                        <a><button class="knapp">IT 2 fellesside *ikke satt opp</button></a>
+                        <a href="elever.php"><button class="knapp">Elever</button></a>
+                        <a href="https://databit.haldenvgs.net"><button class="knapp">Lærer: Gunnar Kopperud</button></a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </main>
 </body>
 <script src="javascript/script.js"></script>
 </html>
